@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+      body{
+        margin: 2rem
+      }
+      header{
+        padding: 2rem;
+        background-color: #d1e08a
+      }
+      menu{
+        padding: 0;
+        margin: 0;
+        list-style-type:none;
+      }
+      main{
+        background-color: #85b1d4
+      }
+      div{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+      }
+      p{ 
+        padding: 1rem;
+        border: 5px solid #000
+      }
+      footer{ 
+        padding: 2rem;
+        background-color: #ccc;
+      }
+    </style>
+</head>
+<!-- menu is the same command for ul
+  ol is ordered list, numbered -->
+<body>
+  <header>
+    <!-- add logo -->
+   <nav> 
+    <menu>
+      <li>home</li>
+      <li>page 2</li>
+      <li>page 3</li>
+    </menu>
+   </nav>
+  </header>
+
+ <main>
+  <!-- Every page must has a header 1 -->
+ <h1>This will be header 1 </h1>
+
+ <div>
+   <p>I put some text</p>
+   <p>I put some text</p>
+   <p>I put some text</p>
+   <p>I put some text</p>
+   <p>I put some text</p>
+   <p>I put some text</p>
+ </div>
+
+ </main>
+
+ <footer>I am adding stuff here so I can see a footer</footer>
+
+</body>
+</html>
