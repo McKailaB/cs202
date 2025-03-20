@@ -6,21 +6,26 @@
     <title>Flexbox</title>
     <style>
       body{
-        margin: 2rem
+        font-size: 1.5rem;
+        margin: 0;
       }
       header{
         padding: 2rem;
-        background-color: #d1e08a
+        background-color: #d1e08a;
       }
       menu{
         padding: 0;
         margin: 0;
         list-style-type:none;
       }
-      main{
-        background-color: #85b1d4
+      menu.flex-container{
+        justify-content: left;
       }
-      div{
+      main{
+        background-color: #85b1d4;
+        padding: 1rem;
+      }
+      .flex-container {
        display: flex;
        flex-wrap: wrap;
        justify-content: space-evenly;
@@ -41,7 +46,7 @@
   <header>
     <!-- add logo -->
    <nav> 
-    <menu>
+    <menu class="flex-container">
       <li>home</li>
       <li>page 2</li>
       <li>page 3</li>
@@ -52,8 +57,9 @@
  <main>
   <!-- Every page must has a header 1 -->
  <h1>This will be header 1 </h1>
+ <img src="../assets/images/Soccer ball.png"n alt="soccer ball" />
 
- <div>
+ <div class="flex-container">
    <p>I put some text</p>
    <p>I put some text</p>
    <p>I put some text</p>
