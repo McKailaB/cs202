@@ -12,12 +12,23 @@
     header{
       padding: 2rem;
       background-color: #066e0b;
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+      font-weight: 500;
+      padding: 0rem
     }
     main{
       background-color: #84e589;
-      padding: 1rem
+      padding: 1rem;
+      width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
     }
-    div.flex-container{
+    div.flex-container-1st-layer{
       display:flex;
       flex-wrap:wrap;
       justify-content: space-evenly;
@@ -25,6 +36,17 @@
     p{
       border: 1px solid #000;
       padding: 1rem;
+      margin: 1.5rem
+    }
+    div.flex-container-2nd-layer{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+    }
+    div.flex-container-3rd-layer{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:right;
     }
   </style>
 </head>
@@ -34,12 +56,34 @@
 </header>
 
 <main>
-  <h2>This is the Balcom family tree from the perspective of McKaila. Click on any name to see a short biography of each person.</h2>
-<div class="flex-container">
+  <h2>Here is the Balcom family tree. Each name has a link that will bring you to a biography of each person's life from the perspective of McKaila, the granddaughter.</h2>
+<div class="flex-container-1st-layer">
+  <img src="../assets/images/Bill-Lampson.png" alt="Bill Lampson">
   <p>Bill Lampson</p>
+
   <p>Kathy Dooley</p>
+  <img src="../assets/images/Maury-Balcom.jpg" alt="Maury Balcom">
   <p>Maury Balcom</p>
+
   <p>Susan Angelides</p>
+</div>
+
+<div class="flex-container-2nd-layer">
+
+  <p>Richard Julian</p>
+
+  <p>Kaury Balcom</p>
+  <img src="../assets/images/Jared-Balcom.jpg" alt="Jared Balcom">
+  <p>Jared Balcom</p>
+  <img src="../assets/images/Kellee-Balcom.png" alt="Kellee Magnuson">
+  <p>Kellee Magnuson</p>
+</div>
+
+<div class="flex-container-3rd-layer">
+  <img src="../assets/images/McKaila-Balcom.JPG" alt="McKaila Balcom">
+  <p> McKaila Balcom</p>
+  <img src="../assets/images/Will-Balcom.JPG" alt="Will Balcom">
+  <p>William Balcom</p>
 </div>
 
 </main>
