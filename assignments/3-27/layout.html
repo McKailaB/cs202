@@ -23,10 +23,14 @@
     
     header{
       padding: 2rem;
-      background-color: #066e0b;
-      width: 1000px;
+      background-color: #2a762e;
+      width: 1200px;
       margin: 0 auto;
       text-align: center;
+      border: 2px solid #000
+    }
+    h1{
+      font-size: 50px;
     }
     h2{
       text-align: center;
@@ -36,7 +40,7 @@
     main{
       background-color: #84e589;
       padding: 1rem;
-      width: 1000px;
+      width: 1200px;
       margin: 0 auto;
       padding: 2rem;
     }
@@ -49,6 +53,15 @@
       border: 1px solid #000;
       padding: 1rem;
       margin: 1.5rem
+    }
+    hr{ 
+      display: block;
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+     margin-left: auto;
+     margin-right: auto;
+     border-style: inset;
+     border-width: 1px;
     }
     div.flex-container-2nd-layer{
       display:flex;
@@ -64,21 +77,26 @@
 </head>
 
 <body>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
 
-<header>
-  <h1>Balcom Family Tree</h1>
+<header class="site-header">
+  <div class="flex-container-burger-menu">
+    <div class="site-header_toolbar">
+     <div class="site-header_logo"> </div>
+     <nav class="site-header_mobile-nav">
+   <button class="site-header_mobile-toggle">
+   <span class="visible-for-screen-readers">Toggle Menu</span>
+  </button>
+  <span class="burger"></span>
+  </nav>
+</div>
+
+ <h1><u>Balcom Family Tree</u></h1>
+
 </header>
 
 <main>
   <h2>Here is the Balcom family tree. Each name has a link that will bring you to a biography of each person's life from the perspective of McKaila, the granddaughter.</h2>
+  <hr>
 <div class="flex-container-1st-layer">
   <img src="../assets/images/bill-headshot.JPEG" alt="Bill Lampson">
   <p>Bill Lampson</p>
