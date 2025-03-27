@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .tree {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .couple {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 0 20px; /* Adds spacing between couples */
+        }
+
+        .person {
+            padding: 10px 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        /* Horizontal line only between spouses inside the same couple */
+        .couple .person:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            width: 40px;
+            height: 2px;
+            background-color: black;
+        }
+
+        /* Vertical connectors */
+        .connector {
+            width: 2px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .spacer {
+            width: 50px;
+        }
+
+        /* Align children to the right */
+        .children {
+            justify-content: flex-start;
+            margin-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="tree">
+    <!-- Grandparents -->
+    <div class="generation">
+        <div class="couple">
+            <div class="person">Grandfather 1</div>
+            <div class="person">Grandmother 1</div>
+        </div>
+        <div class="spacer"></div>
+        <div class="couple">
+            <div class="person">Grandfather 2</div>
+            <div class="person">Grandmother 2</div>
+        </div>
+    </div>
+
+    <!-- Connecting Line -->
+    <div class="generation-line">
+        <div class="connector"></div>
+    </div>
+
+    <!-- First Set of Parents -->
+    <div class="generation">
+        <div class="couple">
+            <div class="person">Father</div>
+            <div class="person">Mother</div>
+        </div>
+    </div>
+
+    <!-- Connecting Line -->
+    <div class="generation-line">
+        <div class="connector"></div>
+    </div>
+
+    <!-- Second Set of Parents -->
+    <div class="generation">
+        <div class="couple">
+            <div class="person">Uncle</div>
+            <div class="person">Aunt</div>
+        </div>
+    </div>
+
+    <!-- Connecting Line -->
+    <div class="generation-line">
+        <div class="connector"></div>
+    </div>
+
+    <!-- Children (Moved to the right) -->
+    <div class="generation children">
+        <div class="person">Child 1</div>
+        <div class="person">Child 2</div>
+        <div class="person">Child 3</div>
+        <div class="spacer"></div>
+        <div class="person">Cousin 1</div>
+        <div class="person">Cousin 2</div>
+    </div>
+</div>
+
+</body>
+</html>

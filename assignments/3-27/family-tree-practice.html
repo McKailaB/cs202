@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tree{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        text-align: center;
+         margin-top: 50px;
+    }
+    .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .person {
+            padding: 10px 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        /* Connecting lines */
+        .generation-line {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+        }
+
+        .horizontal {
+            width: 50px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tree">
+    <!-- Grandparents -->
+    <div class="generation">
+        <div class="person">Grandfather</div>
+        <div class="person">Grandmother</div>
+    </div>
+    
+    <!-- Line -->
+    <div class="generation-line">
+        <div class="line"></div>
+    </div>
+
+    <!-- Parents -->
+    <div class="generation">
+        <div class="person">Father</div>
+        <div class="person">Mother</div>
+    </div>
+
+    <!-- Line -->
+    <div class="generation-line">
+        <div class="line"></div>
+    </div>
+
+    <!-- Children -->
+    <div class="generation">
+        <div class="person">Child 1</div>
+        <div class="person">Child 2</div>
+    </div>
+</div>
+
+</body>
+</html>
