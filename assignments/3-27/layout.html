@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McKaila Balcom's Home Page</title>
   <style>
+    *{
+      box-sizing:border-box;
+    }
     body{
       font-size: 1rem;
       margin: 0
@@ -24,13 +27,14 @@
     header{
       padding: 2rem;
       background-color: #2a762e;
-      width: 1200px;
+      max-width: 800px;
       margin: 0 auto;
       text-align: center;
       border: 2px solid #000
     }
     h1{
       font-size: 50px;
+      text-align:center;
     }
     h2{
       text-align: center;
@@ -40,7 +44,7 @@
     main{
       background-color: #84e589;
       padding: 1rem;
-      width: 1200px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 2rem;
     }
@@ -68,7 +72,7 @@
       padding:10px 20px;
       border:2px solid #000;
       border-radius:10px;
-      background-color:#ffffff;
+      background-color:#eee;
       position: relative
     }
     .couple.person:not(:last-child)::after{
@@ -93,20 +97,7 @@
     }
     .children{
       justify-content:flex-start;
-      margin-left:500px
-    }
-    .line{
-      width:2px;
-      height:20px;
-      background-color:#000;
-      position:absolute;
-    }
-    .horizontal{
-      width:50px;
-      height:2px;
-      background-color:#000;
-      position:absolute;
-      top:10px;
+      margin-left:300px
     }
   </style>
 </head>
@@ -118,15 +109,14 @@
     <div class="site-header_toolbar">
      <div class="site-header_logo"> </div>
      <nav class="site-header_mobile-nav">
-   <button class="site-header_mobile-toggle">
-   <span class="visible-for-screen-readers">Toggle Menu</span>
+     <button class="site-header_mobile-toggle">
+     <span class="visible-for-screen-readers">Toggle Menu</span>
   </button>
   <span class="burger"></span>
   </nav>
 </div>
 
  <h1><u>Balcom Family Tree</u></h1>
-
 </header>
 
 <main>
