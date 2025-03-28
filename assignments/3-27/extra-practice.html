@@ -3,99 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Tree</title>
+    <title>Image with Textbox</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        .tree {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+        .container {
             text-align: center;
-            margin-top: 50px;
+            width: 300px; /* Adjust as needed */
+            margin: auto;
         }
-
-        .generation {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
-
-        .person {
-            padding: 10px 20px;
-            border: 2px solid #000;
-            border-radius: 10px;
-            margin: 10px;
-            background-color: lightblue;
-            position: relative;
-        }
-
-        /* Connecting lines */
-        .generation-line {
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        .line {
-            width: 2px;
-            height: 20px;
-            background-color: black;
-            position: absolute;
-        }
-
-        .horizontal {
-            width: 50px;
-            height: 2px;
-            background-color: black;
-            position: absolute;
-            top: 10px;
-        }
-
-        .spacer {
-            width: 50px;
+        .textbox {
+            width: calc(100% - 20px); /* Adjust padding */
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
 
-<div class="tree">
-    <!-- Grandparents -->
-    <div class="generation">
-        <div class="person">Grandfather 1</div>
-        <div class="person">Grandmother 1</div>
-        <div class="spacer"></div>
-        <div class="person">Grandfather 2</div>
-        <div class="person">Grandmother 2</div>
-    </div>
-
-    <!-- Connecting Line -->
-    <div class="generation-line">
-        <div class="line"></div>
-    </div>
-
-    <!-- Parents -->
-    <div class="generation">
-        <div class="person">Father</div>
-        <div class="person">Mother</div>
-    </div>
-
-    <!-- Connecting Line -->
-    <div class="generation-line">
-        <div class="line"></div>
-    </div>
-
-    <!-- Children -->
-    <div class="generation">
-        <div class="person">Child 1</div>
-        <div class="person">Child 2</div>
-        <div class="person">Child 3</div>
-    </div>
+<div class="container">
+    <img src="your-image.jpg" alt="Image">
+    <input type="text" class="textbox" placeholder="Enter text here...">
 </div>
 
 </body>

@@ -5,77 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McKaila Balcom's Home Page</title>
   <style>
-    *{
+    * {
       box-sizing:border-box;
     }
-    body{
+    body {
       font-size: 1rem;
       margin: 0
     }
-    .dropbtn{
+    .dropbtn {
       background-color: #ccc;
       color: white;
       padding: 16px;
       font-size: 16px;
       border: none;
     }
-    .dropdown{
+    .dropdown {
      position: relative;
      display: inline-block;
     }
     
-    header{
+    header {
       padding: 2rem;
       background-color: #2a762e;
-      max-width: 800px;
+      max-width: 1280px;
       margin: 0 auto;
       text-align: center;
       border: 2px solid #000
     }
-    h1{
+    h1 {
       font-size: 50px;
       text-align:center;
+      text-decoration:underline;
     }
-    h2{
+    h2 {
       text-align: center;
       font-weight: 500;
       padding: 0rem
     }
-    main{
+    main {
       background-color: #84e589;
       padding: 1rem;
-      max-width: 800px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 2rem;
     }
-    
+    .img{
+      padding:1rem
+    }
     /* This is the tree */
-    .tree{
+    .tree {
       display:flex;
       align-items:center;
       flex-direction: column;
       text-align:center;
       margin-top:50px
     }
-    .generation{
+    .generation {
       display:flex;
       justify-content:center;
       margin:20px 0;
     }
-    .couple{
+    .couple {
       display:flex;
       align-items: center;
       position:relative;
       margin: 0 20px;
     }
-    .person{
+    .person {
       padding:10px 20px;
       border:2px solid #000;
       border-radius:10px;
       background-color:#eee;
-      position: relative
+      position: relative;
+      text-align:center;
+      margin:auto;
     }
-    .couple.person:not(:last-child)::after{
+    .img {
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .couple.person:not(:last-child)::after {
       content:"";
       position:absolute;
       top:50%;
@@ -84,7 +94,7 @@
       height:2px;
       background-color: #000;
     }
-    .connector{
+    .connector {
       width:2px;
       height:20px;
       background-color:#000;
@@ -92,12 +102,12 @@
       left:50%;
       transform:translateX(-50%);
     }
-    .spacer{
+    .spacer {
       width:50px;
     }
-    .children{
+    .children {
       justify-content:flex-start;
-      margin-left:300px
+      margin-left:300px;
     }
   </style>
 </head>
@@ -116,7 +126,7 @@
   </nav>
 </div>
 
- <h1><u>Balcom Family Tree</u></h1>
+ <h1>Balcom Family Tree</h1>
 </header>
 
 <main>
@@ -127,18 +137,18 @@
   <!-- grandparents -->
    <div class="generation">
     <div class="couple">
-  <img src="../assets/images/bill-headshot.JPEG" alt="Bill Lampson">
+  <img src="../../assets/images/bill-headshot.jpg" alt="Bill Lampson">
   <div class="person">Bill Lampson</div>
-  <img src="../assets/images/nana-headshot.PNG" alt="Kathy Dooley">
+  <img src="../../assets/images/nana-headshot.jpg" alt="Kathy Dooley">
   <div class="person">Kathy Dooley</div>
   </div>
 
   <div class="spacer"></div>
 
   <div class="couple">
-  <img src="../assets/images/papa-headshot.PNG" alt="Maury Balcom">
+  <img src="../../assets/images/papa-headshot.jpg" alt="Maury Balcom">
   <div class="person">Maury Balcom</div>
-  <img src="../assets/images/susan-headshot.PNG" alt="Susan Angelides">
+  <img src="../../assets/images/susan-headshot.jpg" alt="Susan Angelides">
   <div class="person">Susan Angelides</div>
   </div>
 </div>
@@ -151,9 +161,9 @@
 <!-- parents -->
 <div class="generation">
   <div class="couple">
-  <img src="rich-headshot.PNG" alt="Richard Julian">
+  <img src="../../assets/images/rich-headshot.jpg" alt="Richard Julian">
   <div class="person">Richard Julian</div>
-  <img src="../assets/images/kaury-headshot.PNG" alt="Kaury Balcom">
+  <img src="../../assets/images/kaury-headshot.jpg" alt="Kaury Balcom">
   <div class="person">Kaury Balcom</div>
   </div>
 </div>
@@ -162,9 +172,9 @@
 
   <div class="generation">
   <div class="couple">
-  <img src="../assets/images/dad-headshot.PNG" alt="Jared Balcom">
+  <img src="../../assets/images/dad-headshot.jpg" alt="Jared Balcom">
   <div class="person">Jared Balcom</div>
-  <img src="../assets/images/mom-headshot.JPEG" alt="Kellee Magnuson">
+  <img src="../../assets/images/mom-headshot.jpg" alt="Kellee Magnuson">
   <div class="person">Kellee Magnuson</div>
   </div>
 </div>
@@ -177,9 +187,9 @@
 <!-- kids -->
 <div class="generation children">
   <div class="spacer"></div>
-  <img src="../assets/images/McKaila-Balcom.JPG" alt="McKaila Balcom">
+  <img src="../../assets/images/McKaila.jpg" alt="McKaila Balcom">
   <div class="person"> McKaila Balcom</div>
-  <img src="../assets/images/Will-Balcom.JPG" alt="Will Balcom">
+  <img src="../../assets/images/Will.jpg" alt="Will Balcom">
   <div class="person">William Balcom</div>
 </div>
 </div>
