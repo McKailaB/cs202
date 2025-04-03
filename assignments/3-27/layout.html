@@ -8,6 +8,7 @@
   <style>
     * {
       box-sizing: border-box;
+      color:#000;
     }
 
     body {
@@ -15,38 +16,74 @@
       margin: 0
     }
 
-    .dropbtn {
-      background-color: #ccc;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
+    nav{
+      display:flex;
+      justify-content: right;
+      align-items: center;
+      background: #2a762e;
+      max-width:1280px;
+      margin: 0 auto;
+    }
+
+    nav button {
+      background-color: #2a762e;
+      color: #fff;
+      padding:10px;
       border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      max-width: 1280px;
     }
 
     .dropdown {
-      position: relative;
-      display: inline-block;
+      display: none;
+      background:#333;
+      margin: 0 auto;
+    }
+
+    .dropdown.show {
+      display:block;
+    }
+
+    .dropdown a{
+      color: #fff;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .rotate{
+      transform: rotate(180deg);
     }
 
     header {
-      padding: 2rem;
+      padding: 10px;
       background-color: #2a762e;
       max-width: 1280px;
       margin: 0 auto;
       text-align: center;
-      border: 2px solid #000
+      border: 2px solid #000;
+      justify-content: center;
     }
 
     h1 {
       font-size: 50px;
       text-align: center;
       text-decoration: underline;
+      background-color: #2a762e;
+      padding:10px;
+      max-width: 1280px;
+      margin:0 auto;
     }
 
     h2 {
       text-align: center;
       font-weight: 500;
-      padding: 0rem
+      padding: 0rem;
     }
 
     main {
@@ -91,6 +128,7 @@
       position: relative;
       text-align: center;
       margin: auto;
+      color:#000;
     }
 
     .img {
@@ -130,20 +168,30 @@
 </head>
 
 <body>
+  <nav>
+    <button onclick="toggleMenu()">Menu <span id="arrow">&#9662;
+    </span>
+    </button>
+    <div class="dropdown" id="menu">
+      <a href="#">Home</a>
+      <a href="#">Bill Lampson</a>
+      <a href="#">Kathy Dooley</a>
+      <a href="#">Maury Balcom</a>
+      <a href="#">Susan Angelides</a>
+      <a href="#">Kaury Balcom</a>
+      <a href="#">Rich Julian</a>
+      <a href="#">Jared Balcom</a>
+      <a href="#">Kellee Magnuson</a>
+      <a href="#">McKaila Balcom</a>
+      <a href="#">Will Balcom</a>
+    </div>
+    
+  </nav>
 
-  <header class="site-header">
-    <div class="flex-container-burger-menu">
-      <div class="site-header_toolbar">
-        <div class="site-header_logo"> </div>
-        <nav class="site-header_mobile-nav">
-          <button class="site-header_mobile-toggle">
-            <span class="visible-for-screen-readers">Toggle Menu</span>
-          </button>
-          <span class="burger"></span>
-        </nav>
-      </div>
+  <header>
 
       <h1>Balcom Family Tree</h1>
+
   </header>
 
   <main>
@@ -156,18 +204,18 @@
       <div class="generation">
         <div class="couple">
           <img src="../../assets/images/bill-headshot.jpg" alt="Bill Lampson">
-          <div class="person">Bill Lampson</div>
+          <div class="person"><a href="#">Bill Lampson</a></div>
           <img src="../../assets/images/nana-headshot.jpg" alt="Kathy Dooley">
-          <div class="person">Kathy Dooley</div>
+          <div class="person"><a href="#">Kathy Dooley</a></div>
         </div>
 
         <div class="spacer"></div>
 
         <div class="couple">
           <img src="../../assets/images/papa-headshot.jpg" alt="Maury Balcom">
-          <div class="person">Maury Balcom</div>
+          <div class="person"><a href="#">Maury Balcom</a></div>
           <img src="../../assets/images/susan-headshot.jpg" alt="Susan Angelides">
-          <div class="person">Susan Angelides</div>
+          <div class="person"><a href="#">Susan Angelides</a></div>
         </div>
       </div>
 
@@ -180,9 +228,9 @@
       <div class="generation">
         <div class="couple">
           <img src="../../assets/images/rich-headshot.jpg" alt="Richard Julian">
-          <div class="person">Richard Julian</div>
+          <div class="person"><a href="#">Richard Julian</a></div>
           <img src="../../assets/images/kaury-headshot.jpg" alt="Kaury Balcom">
-          <div class="person">Kaury Balcom</div>
+          <div class="person"><a href="#">Kaury Balcom</a></div>
         </div>
       </div>
 
@@ -191,9 +239,9 @@
       <div class="generation">
         <div class="couple">
           <img src="../../assets/images/dad-headshot.jpg" alt="Jared Balcom">
-          <div class="person">Jared Balcom</div>
+          <div class="person"><a href="#">Jared Balcom</a></div>
           <img src="../../assets/images/mom-headshot.jpg" alt="Kellee Magnuson">
-          <div class="person">Kellee Magnuson</div>
+          <div class="person"><a href="#">Kellee Magnuson</a></div>
         </div>
       </div>
 
@@ -206,14 +254,19 @@
       <div class="generation children">
         <div class="spacer"></div>
         <img src="../../assets/images/mckaila.jpg" alt="McKaila Balcom">
-        <div class="person"> McKaila Balcom</div>
+        <div class="person"><a href="#">McKaila Balcom</a></div>
         <img src="../../assets/images/will.jpg" alt="Will Balcom">
-        <div class="person">William Balcom</div>
+        <div class="person"><a href="#">William Balcom</a></div>
       </div>
     </div>
 
   </main>
-
+<script>
+  function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+    document.getElementById("arrow").classList.toggle("rotate");
+  }
+</script>
 </body>
 
 </html>
