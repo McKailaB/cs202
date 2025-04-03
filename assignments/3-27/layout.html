@@ -8,7 +8,7 @@
   <style>
     * {
       box-sizing: border-box;
-      color:#000;
+      color: #000;
     }
 
     body {
@@ -16,19 +16,19 @@
       margin: 0
     }
 
-    nav{
-      display:flex;
+    nav {
+      display: flex;
       justify-content: right;
       align-items: center;
       background: #2a762e;
-      max-width:1280px;
+      max-width: 1280px;
       margin: 0 auto;
     }
 
     nav button {
       background-color: #2a762e;
       color: #fff;
-      padding:10px;
+      padding: 10px;
       border: none;
       cursor: pointer;
       width: 100%;
@@ -41,22 +41,22 @@
 
     .dropdown {
       display: none;
-      background:#333;
+      background: #333;
       margin: 0 auto;
     }
 
     .dropdown.show {
-      display:block;
+      display: block;
     }
 
-    .dropdown a{
+    .dropdown a {
       color: #fff;
       padding: 10px;
       display: block;
       text-decoration: none;
     }
 
-    .rotate{
+    .rotate {
       transform: rotate(180deg);
     }
 
@@ -75,9 +75,9 @@
       text-align: center;
       text-decoration: underline;
       background-color: #2a762e;
-      padding:10px;
+      padding: 10px;
       max-width: 1280px;
-      margin:0 auto;
+      margin: 0 auto;
     }
 
     h2 {
@@ -128,7 +128,7 @@
       position: relative;
       text-align: center;
       margin: auto;
-      color:#000;
+      color: #000;
     }
 
     .img {
@@ -170,27 +170,27 @@
 <body>
   <nav>
     <button onclick="toggleMenu()">Menu <span id="arrow">&#9662;
-    </span>
+      </span>
     </button>
     <div class="dropdown" id="menu">
       <a href="#">Home</a>
-      <a href="#">Bill Lampson</a>
-      <a href="#">Kathy Dooley</a>
-      <a href="#">Maury Balcom</a>
-      <a href="#">Susan Angelides</a>
-      <a href="#">Kaury Balcom</a>
-      <a href="#">Rich Julian</a>
-      <a href="#">Jared Balcom</a>
-      <a href="#">Kellee Magnuson</a>
-      <a href="#">McKaila Balcom</a>
-      <a href="#">Will Balcom</a>
+      <a href="../../pages/Bill-page.html">Bill Lampson</a>
+      <a href="../../pages/kathy-page.html">Kathy Dooley</a>
+      <a href="../../pages/maury-page.html">Maury Balcom</a>
+      <a href="../../pages/susan-page.html">Susan Angelides</a>
+      <a href="../../pages/kaury-page.html">Kaury Balcom</a>
+      <a href="../../pages/rich-page.html">Rich Julian</a>
+      <a href="../../pages/jared-page.html">Jared Balcom</a>
+      <a href="../../pages/kellee-page.html">Kellee Magnuson</a>
+      <a href="../../pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="../../pages/will-page.html">Will Balcom</a>
     </div>
-    
+
   </nav>
 
   <header>
 
-      <h1>Balcom Family Tree</h1>
+    <h1>Balcom Family Tree</h1>
 
   </header>
 
@@ -261,12 +261,12 @@
     </div>
 
   </main>
-<script>
-  function toggleMenu(){
-    document.getElementById("menu").classList.toggle("show");
-    document.getElementById("arrow").classList.toggle("rotate");
-  }
-</script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+      document.getElementById("arrow").classList.toggle("rotate");
+    }
+  </script>
 </body>
 
 </html>
