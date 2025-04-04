@@ -1,11 +1,100 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kellee Balcom Biography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kellee Balcom Biography</title>
 </head>
+<style>
+  * {
+    box-sizing: border-box;
+    color: #000;
+  }
+
+  nav {
+    background: #333;
+    padding: 10px;
+  }
+
+  nav button {
+    background-color: #bbf2c9;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dropdown {
+    display: none;
+    background: #333;
+    margin: 0 auto;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .dropdown a {
+    color: #eee;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background: #333;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: 1rem 30rem;
+  }
+
+  body {
+    background-color: #bbf2c9;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+</style>
+
 <body>
-    <h1>This is Kellee's page</h1>
+  <nav>
+    <button onclick="toggleMenu()">Menu &#9662;</button>
+
+    <div class="dropdown" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="../pages/jared-page.html">Jared Balcom</a>
+      <a href="../pages/kellee-page.html">Kellee Balcom</a>
+      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="../pages/will-page.html">Will Balcom</a>
+    </div>
+
+  </nav>
+  <img src="../assets/images/kellee-photo.JPEG" alt="Kellee Balcom">
+
+  <h1>Kellee Anne Balcom</h1>
+
+  <p>Kellee Anne Balcom was born in Pasco, Washington on April 23rd, 1969. She grew up in Kennewick, Washington, and graduated from Kamiakin High School in 1987. She then went to Whitman College in Walla Walla, Washington, where she played colligiate basketball for 4 years. She graduated with a bachelor's degree in sociology and moved back to Kennewick. She became an important part of the Tri-Cities community, starting the first Boys and Girls Club and working within the juvenile court system. She married Jared Balcom in 2003 and had McKaila in 2005 and Will in 2007.
+    Kellee became an executive director for the Washington State Potato Foundation in 2003 and after having kids she became a consultant for the Carson Kolzig Foundation and the Pasco Education Foundation. She currently still works for the Washington State Potato Foundation, in addition to volunteering for the Pasco Police Foundation and Tri-Cities Prep High School. 
+  </p>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
 </body>
+
 </html>

@@ -5,7 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McKaila Balcom Biography</title>
 </head>
+<style>
+    * {
+    box-sizing: border-box;
+    color: #000;
+  }
+
+  nav {
+    background: #333;
+    padding: 10px;
+  }
+
+  nav button {
+    background-color: #bbf2c9;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dropdown {
+    display: none;
+    background: #333;
+    margin: 0 auto;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .dropdown a {
+    color: #eee;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background: #333;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: 1rem 30rem;
+  }
+
+  body {
+    background-color: #bbf2c9;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+</style>
+
 <body>
-    <h1>This is McKaila's Page</h1>
+  <nav>
+    <button onclick="toggleMenu()">Menu &#9662;</button>
+
+    <div class="dropdown" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="../pages/jared-page.html">Jared Balcom</a>
+      <a href="../pages/kellee-page.html">Kellee Balcom</a>
+      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="../pages/will-page.html">Will Balcom</a>
+    </div>
+
+  </nav>
+  <img src="../assets/images/mck-headshot.JPG" alt="McKaila Balcom">
+
+  <h1>McKaila Grace Balcom</h1>
+
+  <p>McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco with her younger brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently going to Carroll College in Helena, Montana and playing colligiate volleyball.
+    McKaila is currently a sopohmore studying business and plans to graduate from Carroll College in 2027 with a degree in Business Marketing and Management and a Hispanic Studies and Culture minor. She's considering going to law school after graduating from Carroll. 
+  </p>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
 </body>
+
 </html>
