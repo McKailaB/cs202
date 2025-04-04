@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Website</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    color: #000;
+  }
+
+  body {
+    font-size: 1rem;
+    margin: 0;
+    background-color: #bbf2c9;
+  }
+
+  h1 {
+    display: flex;
+    text-align:center;
+    text-decoration: underline;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    font-size:60px;
+  }
+
+  nav {
+    background: #bbf2c9;
+    padding:10px;
+  }
+
+  nav button {
+    background-color: #bbf2c9;
+    color: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dropdown {
+    display: none;
+    background: #333;
+    margin: 0 auto;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .dropdown a {
+    color: #eee;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background: #333;
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    align-items: center;
+    padding:1rem 8rem;
+    position: relative;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  ul{
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+</style>
+
+<body>
+  <h1>The Balcom Family</h1>
+
+  <nav>
+    <button onclick="toggleMenu()">Menu &#9662;</button>
+
+    <div class="dropdown" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="../pages/jared-page.html">Jared Balcom</a>
+      <a href="../pages/kellee-page.html">Kellee Balcom</a>
+      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="../pages/will-page.html">Will Balcom</a>
+    </div>
+
+  </nav>
+
+  <main>
+    <img src="../assets/images/family-photo.JPG" alt="Family Photo">
+    
+    <h2>Here is the Balcom family. Jared and Kellee Balcom have two kids, McKaila and Will. Below are links to biographies of each family member. Click on any name to go to their personal page.</h2>
+
+    <ul>
+      <li><a href="../pages/jared-page.html">Jared Balcom</a></li>
+      <li><a href="../pages/kellee-page.html"> Kellee Balcom</a></li>
+      <li><a href="../pages/mckaila-page.html">McKaila Balcom</a></li>
+      <li><a href="../pages/will-page.html">Will Balcom</a></li>
+    </ul>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>
