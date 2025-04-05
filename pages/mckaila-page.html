@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McKaila Balcom Biography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McKaila Balcom Biography</title>
 </head>
 <style>
-    * {
+  * {
     box-sizing: border-box;
     color: #000;
   }
@@ -47,8 +48,9 @@
     background: #333;
   }
 
+
   img {
-    display: block;
+    display: flex;
     width: 100%;
     align-items: center;
     position: relative;
@@ -61,11 +63,16 @@
 
   h1 {
     text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
   }
 
   p {
     text-align: center;
     font-size: 20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
   }
 </style>
 
@@ -82,13 +89,34 @@
     </div>
 
   </nav>
-  <img src="../assets/images/mck-headshot.JPG" alt="McKaila Balcom">
 
   <h1>McKaila Grace Balcom</h1>
 
-  <p>McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco with her younger brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently going to Carroll College in Helena, Montana and playing colligiate volleyball.
-    McKaila is currently a sopohmore studying business and plans to graduate from Carroll College in 2027 with a degree in Business Marketing and Management and a Hispanic Studies and Culture minor. She's considering going to law school after graduating from Carroll. 
-  </p>
+  <div class="flex-container">
+
+    <img src="../assets/images/tball-mck-will.jpg" alt="t-ball McK">
+
+    <p>McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco with her younger
+      brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently attending Carroll
+      College in Helena, Montana and playing collegiate volleyball.</p>
+
+    <img src="../assets/images/mckaila-pic.JPG" alt="McKaila Balcom">
+
+    <p>McKaila spent her childhood playing sports, hanging out with her little brother and spending time on the farm
+      with her dad. In high school, she was a three sport varsity athlete for all 4 years of high school, playing
+      volleyball, basketball, tennis for three years and participating in track and field her senior year. She also was
+      a part of her high school ASB, being elected as the executive president of the school her senior year. She also
+      participated in club sports and graduated with a 3.9 cumulative GPA.</p>
+
+    <img src="../assets/images/mck-volleyball.JPG" alt="Volleyball">
+
+    <p>McKaila is currently a sopohmore studying business and plans to graduate from Carroll College in 2027 with a
+      degree in Business Marketing and Management and a Hispanic Studies and Languages minor. She's considering going to
+      law school after graduating from Carroll. She is a hitter for her volleyball team, her page can be found <a
+        href="https://carrollathletics.com/sports/womens-volleyball/stats">here</a>.</p>
+
+  </div>
+
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
