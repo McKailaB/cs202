@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4/8</title>
+    <link rel="stylesheet" href="../../style/base.css">
+</head>
+
+<body>
+    <body>
+        <h1>The Balcom Family</h1>
+      
+        <nav>
+          <button onclick="toggleMenu()">Menu <span>&#9662;</span></button>
+      
+          <div class="dropdown" id="menu">
+            <a href="../index.html">Home</a>
+            <a href="../cs202/pages/jared-page.html">Jared Balcom</a>
+            <a href="../cs202/pages/kellee-page.html">Kellee Balcom</a>
+            <a href="../cs202/pages/mckaila-page.html">McKaila Balcom</a>
+            <a href="../cs202/pages/will-page.html">Will Balcom</a>
+          </div>
+      
+        </nav>
+      
+        <script>
+          function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+            document.getElementById("span")[0].classList.toggle("rotate");
+          }
+        </script>
+      </body>
+      
+      </html>
+</body>
+</html>
