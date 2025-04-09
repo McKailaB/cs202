@@ -33,6 +33,7 @@
   }
 
   nav button {
+    display: flex;
     background-color: #eee;
     color: #000;
     padding: 10px;
@@ -100,14 +101,13 @@
 
   <nav>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
-
     <div class="dropdown" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="../cs202/pages/jared-page.html">Jared Balcom</a>
-      <a href="../cs202/pages/kellee-page.html">Kellee Balcom</a>
-      <a href="../cs202/pages/mckaila-page.html">McKaila Balcom</a>
-      <a href="../cs202/pages/will-page.html">Will Balcom</a>
-      <a href="../cs202/pages/pets-page.html">Pets</a>
+      <a href="../../cs202/index.html">Home</a>
+      <a href="../pages/jared-page.html">Jared Balcom</a>
+      <a href="../pages/kellee-page.html">Kellee Balcom</a>
+      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="../pages/will-page.html">Will Balcom</a>
+      <a href="../pages/pets-page.html">Pets</a>
     </div>
 
   </nav>
@@ -115,7 +115,7 @@
   <h1>This is for Sadie and Nugget</h1>
 
   <script>
-     function toggleMenu() {
+    function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
       document.getElementById("arrow").classList.toggle("rotate");
     }

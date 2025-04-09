@@ -17,14 +17,15 @@
   }
 
   nav button {
+    display: flex;
     background-color: #eee;
     color: #000;
     padding: 10px;
     border: none;
     cursor: pointer;
     width: 100%;
-    text-align:left;
-    font-size:20px;
+    text-align: left;
+    font-size: 20px;
   }
 
   .dropdown {
@@ -48,6 +49,10 @@
     background: #333;
   }
 
+  .rotate {
+    transform: rotate(90deg);
+  }
+
   img {
     display: block;
     width: 100%;
@@ -67,23 +72,42 @@
     font-size: 40px;
   }
 
-  p {
+  .paragraph {
     text-align: center;
     font-size: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .live-links {
+    padding-left: 1rem;
+    font-size: 20px;
+  }
+
+  footer {
+    background: #eee;
+    margin: 0 auto;
+    text-align: left;
   }
 </style>
 
 <body>
 
   <nav>
-    <button onclick="toggleMenu()">Menu &#9662;</button>
-
+    <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
       <a href="../pages/jared-page.html">Jared Balcom</a>
       <a href="../pages/kellee-page.html">Kellee Balcom</a>
       <a href="../pages/mckaila-page.html">McKaila Balcom</a>
       <a href="../pages/will-page.html">Will Balcom</a>
+      <a href="../pages/pets-page.html">Pets</a>
     </div>
 
   </nav>
@@ -92,20 +116,23 @@
 
   <img src="../assets/images/dad-mck-tractor.JPG" alt="Dad McK Tractor">
 
-  <p>Jared William Balcom was born in Pasco, Washington on August 1st, 1973. He grew up in a farm family, with Jared
+  <p class="paragraph">Jared William Balcom was born in Pasco, Washington on August 1st, 1973. He grew up in a farm
+    family, with Jared
     being the 4th generation of a family-owned potato farm, Balcom & Moe Inc., located in Pasco, Washington. Jared
     graduated from Pasco High School(1991) and then graduated from Washington State University in Pullman, Washington in
     1996. </p>
 
   <img src="../assets/images/dad-fish.JPEG" alt="Jared Balcom">
 
-  <p>After graduating, Jared moved back to Pasco and started working at the family farm. He worked his way up the chain
+  <p class="paragraph">After graduating, Jared moved back to Pasco and started working at the family farm. He worked his
+    way up the chain
     of command and took over the farm as President in 2007. He married his wife, Kellee Magnuson, in May of 2003. His
     daughter McKaila was born in 2005 and his son Will was born in 2007.</p>
 
   <img src="../assets/images/dad-will-mck.JPEG" alt="McK Will Dad hunting">
 
-  <p> Throughout his career, he's had many achievements, including being named the Young Agribusiness Man of the Year in
+  <p class="paragraph"> Throughout his career, he's had many achievements, including being named the Young Agribusiness
+    Man of the Year in
     2012 and being elected as the President of the National Potato Council in 2022. Jared still runs Balcom & Moe, which
     mainly grows potatoes but also has a grape and apple division, and is also a partner of B&B Potato, which
     specializes in fresh potatoes. To read more about Jared and Balcom & Moe Inc.,
@@ -114,8 +141,20 @@
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
+      document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
 </body>
+
+<footer>
+  <p class="title">Quick Links</p>
+
+  <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
+  <hr>
+  <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
+  <hr>
+  <p class="live-links"><a href="https://carrollathletics.com/sports/womens-volleyball/stats">McKaila's College
+      Stats</a></p>
+</footer>
 
 </html>

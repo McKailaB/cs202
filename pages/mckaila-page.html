@@ -17,6 +17,7 @@
   }
 
   nav button {
+    display: flex;
     background-color: #eee;
     color: #000;
     padding: 10px;
@@ -24,7 +25,7 @@
     cursor: pointer;
     width: 100%;
     text-align: left;
-    font-size:20px;
+    font-size: 20px;
   }
 
   .dropdown {
@@ -48,6 +49,9 @@
     background: #333;
   }
 
+  .rotate {
+    transform: rotate(90deg);
+  }
 
   img {
     display: flex;
@@ -68,25 +72,44 @@
     font-size: 40px;
   }
 
-  p {
+  .paragraph {
     text-align: center;
     font-size: 20px;
     padding-left: 3rem;
     padding-right: 3rem;
 
   }
+
+  .title {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .live-links {
+    padding-left: 1rem;
+    font-size: 20px;
+  }
+
+  footer {
+    background: #eee;
+    margin: 0 auto;
+    text-align: left;
+  }
 </style>
 
 <body>
   <nav>
-    <button onclick="toggleMenu()">Menu &#9662;</button>
-
+    <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
       <a href="../pages/jared-page.html">Jared Balcom</a>
       <a href="../pages/kellee-page.html">Kellee Balcom</a>
       <a href="../pages/mckaila-page.html">McKaila Balcom</a>
       <a href="../pages/will-page.html">Will Balcom</a>
+      <a href="../pages/pets-page.html">Pets</a>
     </div>
 
   </nav>
@@ -97,13 +120,15 @@
 
     <img src="../assets/images/tball-mck-will.jpg" alt="t-ball McK">
 
-    <p>McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco with her younger
+    <p class="paragraph">McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco
+      with her younger
       brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently attending Carroll
       College in Helena, Montana and playing collegiate volleyball.</p>
 
     <img src="../assets/images/mckaila-pic.JPG" alt="McKaila Balcom">
 
-    <p>McKaila spent her childhood playing sports, hanging out with her little brother and spending time on the farm
+    <p class="paragraph">McKaila spent her childhood playing sports, hanging out with her little brother and spending
+      time on the farm
       with her dad. In high school, she was a three sport varsity athlete for all 4 years of high school, playing
       volleyball, basketball, tennis for three years and participating in track and field her senior year. She also was
       a part of her high school ASB, being elected as the executive president of the school her senior year. She also
@@ -111,7 +136,8 @@
 
     <img src="../assets/images/mck-volleyball.JPG" alt="Volleyball">
 
-    <p>McKaila is currently a sopohmore studying business and plans to graduate from Carroll College in 2027 with a
+    <p class="paragraph">McKaila is currently a sopohmore studying business and plans to graduate from Carroll College
+      in 2027 with a
       degree in Business Marketing and Management and a Hispanic Studies and Languages minor. She's considering going to
       law school after graduating from Carroll. She is a hitter for her volleyball team, her page can be found <a
         href="https://carrollathletics.com/sports/womens-volleyball/stats">here</a>.</p>
@@ -121,8 +147,20 @@
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
+      document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
 </body>
+
+<footer>
+  <p class="title">Quick Links</p>
+
+  <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
+  <hr>
+  <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
+  <hr>
+  <p class="live-links"><a href="https://carrollathletics.com/sports/womens-volleyball/stats">McKaila's College
+      Stats</a></p>
+</footer>
 
 </html>

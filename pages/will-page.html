@@ -17,6 +17,7 @@
   }
 
   nav button {
+    display: flex;
     background-color: #eee;
     color: #000;
     padding: 10px;
@@ -24,7 +25,7 @@
     cursor: pointer;
     width: 100%;
     text-align: left;
-    font-size:20px;
+    font-size: 20px;
   }
 
   .dropdown {
@@ -48,6 +49,10 @@
     background: #333;
   }
 
+  .rotate {
+    transform: rotate(90deg);
+  }
+
   img {
     display: block;
     width: 100%;
@@ -67,22 +72,41 @@
     font-size: 40px;
   }
 
-  p {
+  .paragraph {
     text-align: center;
     font-size: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .live-links {
+    padding-left: 1rem;
+    font-size: 20px;
+  }
+
+  footer {
+    background: #eee;
+    margin: 0 auto;
+    text-align: left;
   }
 </style>
 
 <body>
   <nav>
-    <button onclick="toggleMenu()">Menu &#9662;</button>
-
+    <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
       <a href="../pages/jared-page.html">Jared Balcom</a>
       <a href="../pages/kellee-page.html">Kellee Balcom</a>
       <a href="../pages/mckaila-page.html">McKaila Balcom</a>
       <a href="../pages/will-page.html">Will Balcom</a>
+      <a href="../pages/pets-page.html">Pets</a>
     </div>
 
   </nav>
@@ -91,13 +115,15 @@
 
   <img src="../assets/images/mck-and-will.JPG" alt="Mck and Will tractor">
 
-  <p>William Jared Balcom was born on March 25th, 2007 in Richland, Washington. He grew up in Pasco, Washington with his
+  <p class="paragraph">William Jared Balcom was born on March 25th, 2007 in Richland, Washington. He grew up in Pasco,
+    Washington with his
     older sister McKaila and attended Tri-Cities Prep High School. He will graduate top 5 in his class in 2025 and is
     contemplating his college choice.</p>
 
   <img src="../assets/images/will-headshot.JPG" alt="Will Balcom">
 
-  <p>Will is a mutli-sport athlete, playing basketball and baseball for all 4 years of his high school career. He is
+  <p class="paragraph">Will is a mutli-sport athlete, playing basketball and baseball for all 4 years of his high school
+    career. He is
     also on the Tri-Cities Prep ASB council and has been accepted to a variety of well-respected colleges, including
     acceptance into Cal-Poly's agribusiness college, University of Washington's school of engineering, and Gonzaga
     University. He is currently considering California Polytechnic University, University of Washington, and a
@@ -105,7 +131,8 @@
 
   <img src="../assets/images/will-baseball.JPEG" alt="Will hitting">
 
-  <p>Will has played baseball for most of his life, playing t-ball at age 3, little league growing up, and became a
+  <p class="paragraph">Will has played baseball for most of his life, playing t-ball at age 3, little league growing up,
+    and became a
     varsity player his freshman year of high school. He currently plays for the club team Reign, where he is has played
     multiple postitons, including first base, third base, outfield and pitcher. His scouting report can be found <a
       href="https://rsascouting.com/recruits/will-balcom/">here</a>. He has won two state titles for his high school
@@ -114,8 +141,20 @@
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
+      document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
 </body>
+
+<footer>
+  <p class="title">Quick Links</p>
+
+  <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
+  <hr>
+  <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
+  <hr>
+  <p class="live-links"><a href="https://carrollathletics.com/sports/womens-volleyball/stats">McKaila's College
+      Stats</a></p>
+</footer>
 
 </html>
