@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>McKaila's Website</title>
-  <link rel="stylesheet" href="../cs202/style/base.css">
+  <title>Sadie and Nugget</title>
 </head>
-<!-- <style> -->
-   <!-- * {
+<style>
+  * {
     box-sizing: border-box;
     color: #000;
   }
@@ -16,7 +15,7 @@
   body {
     font-size: 1rem;
     margin: 0;
-    background-color: #aebeb2;
+    background-color: #8a8a88;
   }
 
   h1 {
@@ -30,18 +29,18 @@
   }
 
   nav {
-    background: #aebeb2;
-    padding: 10px;
+    background: #888a89;
   }
 
   nav button {
-    background-color: #aebeb2;
+    background-color: #eee;
     color: #000;
     padding: 10px;
     border: none;
     cursor: pointer;
     width: 100%;
-    text-align: right;
+    text-align: left;
+    font-size: 20px;
   }
 
   .dropdown {
@@ -65,6 +64,10 @@
     background: #333;
   }
 
+  .rotate {
+    transform: rotate(180deg);
+  }
+
   img {
     display: block;
     width: 100%;
@@ -77,8 +80,8 @@
     text-align: center;
     /* font-family: "Delius", cursive;
     font-weight: 600;
-    font-style: normal;
-    /* font-size: 25px;
+    font-style: normal; */
+    font-size: 25px;
     padding: 1rem;
   }
 
@@ -86,15 +89,14 @@
     text-align: center;
     list-style: none;
     font-size: 30px;
-    margin: 0 auto; 
+    margin: 0 auto;
     /* font-family: "Delius", cursive;
     font-weight: 400;
-    font-style: normal;
-  } -->
-<!-- </style> -->
+    font-style: normal; */
+  }
+</style>
 
 <body>
- 
 
   <nav>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
@@ -110,26 +112,10 @@
 
   </nav>
 
-  <h1>The Balcom Family</h1>
-
-  <main>
-    <img src="../cs202/assets/images/family-photo.JPG" alt="Family Photo">
-    <!-- <img src="../cs202/assets/images/little-kids-dad.PNG" alt="littles with dad"> -->
-
-    <h2>Here is the Balcom family. Jared and Kellee Balcom have two kids, McKaila and Will. Below are links to
-      biographies of each family member. Click on any name to go to their personal page.</h2>
-
-    <ul>
-      <li><a href="../cs202/pages/jared-page.html">Jared Balcom</a></li>
-      <li><a href="../cs202/pages/kellee-page.html"> Kellee Balcom</a></li>
-      <li><a href="../cs202/pages/mckaila-page.html">McKaila Balcom</a></li>
-      <li><a href="../cs202/pages/will-page.html">Will Balcom</a></li>
-      <li><a href="../cs202/pages/pets-page.html">Pets</a></li>
-    </ul>
-  </main>
+  <h1>This is for Sadie and Nugget</h1>
 
   <script>
-    function toggleMenu() {
+     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
       document.getElementById("arrow").classList.toggle("rotate");
     }
