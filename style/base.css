@@ -24,7 +24,8 @@ nav {
 }
 
 nav button {
-  display: flex;
+  /* need display to get arrow to rotate */
+  display: flex; 
   background-color: #eee;
   color: #000;
   padding: 10px;
@@ -89,51 +90,50 @@ ul {
     font-style: normal; */
 }
 
-.flexbox {
+.flexbox-links {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 2rem;
 }
 
 .dad {
-  background: #619874;
+  background: #93bda2;
   padding: 10px;
 }
 
 .mom {
-  background: #c86b79;
+  background: #cd98a0;
   padding: 10px;
 }
 
 .mck {
-  background: #9b64ac;
+  background: #c3a5cd;
   padding: 10px;
 }
 
 .will {
-  background: #6578b1;
+  background: #abbdf1;
   padding: 10px;
 }
 
 .pets {
-  background: #d1c877;
+  background: #ede8bd;
   padding: 10px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: underline;
   text-align: left;
-  padding-top: 1rem;
-  padding-left: 1rem;
 }
 
 .live-links {
-  padding-left: 1rem;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 footer {
   background: #eee;
-  margin: 0 auto;
+  margin: auto;
   text-align: left;
+  padding: 1rem;
 }
