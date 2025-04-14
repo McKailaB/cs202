@@ -5,16 +5,19 @@
 
 body {
   font-size: 1rem;
+  /* margin controls the space outside the box */
   margin: 0;
   background-color: #8a8a88;
 }
 
 h1 {
+  /* puts flex around the elements for easier movement */
   display: flex;
   text-align: center;
   text-decoration: underline;
-  margin: 0 auto;
+  margin: auto;
   justify-content: center;
+  /* padding controls the space between the words and the box outline */
   padding: 20px;
   font-size: 60px;
 }
@@ -25,7 +28,7 @@ nav {
 
 nav button {
   /* need display to get arrow to rotate */
-  display: flex; 
+  display: flex;
   background-color: #eee;
   color: #000;
   padding: 10px;
@@ -37,12 +40,14 @@ nav button {
 }
 
 .dropdown {
+  /* display none hides the element */
   display: none;
   background: #333;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .dropdown.show {
+  /* this bumps the rest of the page down when the menu drops */
   display: block;
 }
 
@@ -63,9 +68,11 @@ nav button {
 
 img {
   display: block;
+  /* width fills page */
   width: 100%;
   align-items: center;
   padding: 1rem 8rem;
+  /* photo moves around text when screen changes size */
   position: relative;
 }
 
@@ -84,7 +91,7 @@ ul {
   text-align: center;
   list-style: none;
   font-size: 30px;
-  margin: 0 auto;
+  margin: auto;
   /* font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal; */

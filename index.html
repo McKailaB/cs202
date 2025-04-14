@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- this specifies character set, makes website mobile-friendly -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>McKaila's Website</title>
@@ -28,11 +29,13 @@
   <h1>The Balcom Family</h1>
 
   <main>
+    <!-- src specifies photo path, alt says the text name of the photo -->
     <img src="../cs202/assets/images/family-photo.JPG" alt="Family Photo">
 
     <h2>Here is the Balcom family. Jared and Kellee Balcom have two kids, McKaila and Will. Below are links to
       biographies of each family member. Click on any name to go to their personal page.</h2>
 
+    <!-- href means hypertext reference, leads to photo -->
     <ul class="flexbox-links">
       <li class="dad"><a href="../cs202/pages/jared-page.html">Jared Balcom</a></li>
       <li class="mom"><a href="../cs202/pages/kellee-page.html"> Kellee Balcom</a></li>
@@ -52,7 +55,10 @@
     <p class="live-links"><a href="https://carrollathletics.com/sports/womens-volleyball/stats">McKaila's College
         Stats</a></p>
   </footer>
+
+  <!-- adds javascript -->
   <script>
+    // function executes a function
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");
       document.getElementById("arrow").classList.toggle("rotate");
