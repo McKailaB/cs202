@@ -5,141 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Will Balcom Biography</title>
-  <link rel="stylesheet" href="../style/pages.css">
+  <link rel="stylesheet" href="../styles/pages.css">
 </head>
-<style>
-  * {
-    box-sizing: border-box;
-    color: #000;
-  }
-
-  nav {
-    background: #888a89;
-  }
-
-  nav button {
-    display: flex;
-    background-color: #eee;
-    color: #000;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-  }
-
-  .dropdown {
-    display: none;
-    background: #333;
-    margin: 0 auto;
-  }
-
-  .dropdown.show {
-    display: block;
-  }
-
-  .dropdown a {
-    color: #eee;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-  }
-
-  .dropdown a:hover {
-    background: #333;
-  }
-
-  .rotate {
-    transform: rotate(90deg);
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    padding: 1rem 30rem;
-  }
-
-  body {
-    background-color: #888a89;
-    margin: 0;
-  }
-
-  h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
-  }
-
-  .paragraph {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .title {
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: left;
-  }
-
-  .live-links {
-    font-size: 15px;
-  }
-
-  footer {
-    background: #eee;
-    margin: auto;
-    text-align: left;
-    padding: 1rem;
-  }
-</style>
 
 <body>
-  <nav>
+
+  <header>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
+
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
-      <a href="../pages/jared-page.html">Jared Balcom</a>
-      <a href="../pages/kellee-page.html">Kellee Balcom</a>
-      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
-      <a href="../pages/will-page.html">Will Balcom</a>
-      <a href="../pages/pets-page.html">Pets</a>
+      <a href="jared-page.html">Jared Balcom</a>
+      <a href="kellee-page.html">Kellee Balcom</a>
+      <a href="mckaila-page.html">McKaila Balcom</a>
+      <a href="will-page.html">Will Balcom</a>
+      <a href="pets-page.html">Pets</a>
     </div>
 
-  </nav>
+  </header>
 
   <h1>William Jared Balcom</h1>
 
-  <img src="../assets/images/mck-and-will.JPG" alt="Mck and Will tractor">
+  <img src="../assets/images/mck-and-will.jpg" alt="McKaila and Will tractor">
 
   <p class="paragraph">William Jared Balcom was born on March 25th, 2007 in Richland, Washington. He grew up in Pasco,
-    Washington with his
-    older sister McKaila and attended Tri-Cities Prep High School. He will graduate top 5 in his class in 2025 and is
-    contemplating his college choice.</p>
+    Washington with his older sister McKaila and attended Tri-Cities Prep High School. He will graduate top 5 in his
+    class in 2025 and is contemplating his college choice.</p>
 
-  <img src="../assets/images/will-headshot.JPG" alt="Will Balcom">
+  <img src="../assets/images/will-headshot.jpg" alt="Will Balcom">
 
   <p class="paragraph">Will is a mutli-sport athlete, playing basketball and baseball for all 4 years of his high school
-    career. He is
-    also on the Tri-Cities Prep ASB council and has been accepted to a variety of well-respected colleges, including
-    acceptance into Cal-Poly's agribusiness college, University of Washington's school of engineering, and Gonzaga
-    University. He is currently considering California Polytechnic University, University of Washington, and a
+    career. He is also on the Tri-Cities Prep ASB council and has been accepted to a variety of well-respected colleges,
+    including acceptance into Cal-Poly's agribusiness college, University of Washington's school of engineering, and
+    Gonzaga University. He is currently considering California Polytechnic University, University of Washington, and a
     scholarship to play baseball at Whitman College.</p>
 
-  <img src="../assets/images/will-baseball.JPEG" alt="Will hitting">
+  <img src="../assets/images/will-baseball.jpeg" alt="Will hitting in baseball">
 
   <p class="paragraph">Will has played baseball for most of his life, playing t-ball at age 3, little league growing up,
-    and became a
-    varsity player his freshman year of high school. He currently plays for the club team Reign, where he is has played
-    multiple postitons, including first base, third base, outfield and pitcher. His scouting report can be found <a
-      href="https://rsascouting.com/recruits/will-balcom/">here</a>. He has won two state titles for his high school
-    team and is hoping for a third this season. </p>
+    and became a varsity player his freshman year of high school. He currently plays for the club team Reign, where he
+    is has played multiple postitons, including first base, third base, outfield and pitcher. His scouting report can be
+    found <a href="https://rsascouting.com/recruits/will-balcom/">here</a>. He has won two state titles for his high
+    school team and is hoping for a third this season.</p>
 
   <footer>
     <p class="title">Quick Links</p>
-
     <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
     <hr>
     <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
@@ -154,6 +64,7 @@
       document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
+
 </body>
 
 </html>

@@ -5,146 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>McKaila Balcom Biography</title>
-  <link rel="stylesheet" href="../style/pages.css">
+  <link rel="stylesheet" href="../styles/pages.css">
 </head>
-<style>
-  * {
-    box-sizing: border-box;
-    color: #000;
-  }
-
-  nav {
-    background: #888a89;
-  }
-
-  nav button {
-    display: flex;
-    background-color: #eee;
-    color: #000;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-  }
-
-  .dropdown {
-    display: none;
-    background: #333;
-    margin: 0 auto;
-  }
-
-  .dropdown.show {
-    display: block;
-  }
-
-  .dropdown a {
-    color: #eee;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-  }
-
-  .dropdown a:hover {
-    background: #333;
-  }
-
-  .rotate {
-    transform: rotate(90deg);
-  }
-
-  img {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    padding: 1rem 30rem;
-  }
-
-  body {
-    background-color: #888a89;
-    margin: 0;
-  }
-
-  h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
-  }
-
-  .paragraph {
-    text-align: center;
-    font-size: 20px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-  }
-
-  .title {
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: left;
-  }
-
-  .live-links {
-    font-size: 15px;
-  }
-
-  footer {
-    background: #eee;
-    margin: auto;
-    text-align: left;
-    padding: 1rem;
-  }
-</style>
 
 <body>
-  <nav>
+  
+  <header>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
+
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
-      <a href="../pages/jared-page.html">Jared Balcom</a>
-      <a href="../pages/kellee-page.html">Kellee Balcom</a>
-      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
-      <a href="../pages/will-page.html">Will Balcom</a>
-      <a href="../pages/pets-page.html">Pets</a>
+      <a href="jared-page.html">Jared Balcom</a>
+      <a href="kellee-page.html">Kellee Balcom</a>
+      <a href="mckaila-page.html">McKaila Balcom</a>
+      <a href="will-page.html">Will Balcom</a>
+      <a href="pets-page.html">Pets</a>
     </div>
 
-  </nav>
+  </header>
 
   <h1>McKaila Grace Balcom</h1>
 
   <div class="flex-container">
 
-    <img src="../assets/images/tball-mck-will.jpg" alt="t-ball McK">
+    <img src="../assets/images/tball-mck-will.jpg" alt="t-ball McKaila">
 
     <p class="paragraph">McKaila Grace Balcom was born April 10th, 2005 in Richland, Washington. She grew up in Pasco
-      with her younger
-      brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently attending Carroll
-      College in Helena, Montana and playing collegiate volleyball.</p>
+      with her younger brother Will and went to Tri-Cities Prep High School. She graduated in 2023 and is currently
+      attending Carroll College in Helena, Montana and playing collegiate volleyball.</p>
 
-    <img src="../assets/images/mckaila-pic.JPG" alt="McKaila Balcom">
+    <img src="../assets/images/mckaila-pic.jpg" alt="McKaila Balcom">
 
     <p class="paragraph">McKaila spent her childhood playing sports, hanging out with her little brother and spending
-      time on the farm
-      with her dad. In high school, she was a three sport varsity athlete for all 4 years of high school, playing
-      volleyball, basketball, tennis for three years and participating in track and field her senior year. She also was
-      a part of her high school ASB, being elected as the executive president of the school her senior year. She also
-      participated in club sports and graduated with a 3.9 cumulative GPA.</p>
+      time on the farm with her dad. In high school, she was a three sport varsity athlete for all 4 years of high
+      school, playing volleyball, basketball, tennis for three years and participating in track and field her senior
+      year. She also was a part of her high school ASB, being elected as the executive president of the school her
+      senior year. She also participated in club sports and graduated with a 3.9 cumulative GPA.</p>
 
-    <img src="../assets/images/mck-volleyball.JPG" alt="Volleyball">
+    <img src="../assets/images/mck-volleyball.jpg" alt="Volleyball photo">
 
     <p class="paragraph">McKaila is currently a sopohmore studying business and plans to graduate from Carroll College
-      in 2027 with a
-      degree in Business Marketing and Management and a Hispanic Studies and Languages minor. She's considering going to
-      law school after graduating from Carroll. She is a hitter for her volleyball team, her page can be found <a
-        href="https://carrollathletics.com/sports/womens-volleyball/stats">here</a>.</p>
+      in 2027 with a degree in Business Marketing and Management and a Hispanic Studies and Languages minor. She's
+      considering going to law school after graduating from Carroll. She is a hitter for her volleyball team, her page
+      can be found <a href="https://carrollathletics.com/sports/womens-volleyball/stats">here</a>.</p>
 
   </div>
+
   <footer>
     <p class="title">Quick Links</p>
-
     <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
     <hr>
     <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
@@ -159,8 +67,7 @@
       document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
+
 </body>
-
-
 
 </html>

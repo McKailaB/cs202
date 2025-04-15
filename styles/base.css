@@ -22,11 +22,11 @@ h1 {
   font-size: 60px;
 }
 
-nav {
+header {
   background: #888a89;
 }
 
-nav button {
+header button {
   /* need display to get arrow to rotate */
   display: flex;
   background-color: #eee;

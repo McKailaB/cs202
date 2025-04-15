@@ -5,141 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jared Balcom Biography</title>
-  <link rel="stylesheet" href="../style/pages.css">
+  <link rel="stylesheet" href="../styles/pages.css">
 </head>
-<style>
-  * {
-    box-sizing: border-box;
-    color: #000;
-  }
-
-  nav {
-    background: #888a89;
-  }
-
-  nav button {
-    display: flex;
-    background-color: #eee;
-    color: #000;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-  }
-
-  .dropdown {
-    display: none;
-    background: #333;
-    margin: 0 auto;
-  }
-
-  .dropdown.show {
-    display: block;
-  }
-
-  .dropdown a {
-    color: #eee;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-  }
-
-  .dropdown a:hover {
-    background: #333;
-  }
-
-  .rotate {
-    transform: rotate(90deg);
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    padding: 1rem 30rem;
-  }
-
-  body {
-    background-color: #888a89;
-    margin: 0;
-  }
-
-  h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
-  }
-
-  .paragraph {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .title {
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: left;
-  }
-
-  .live-links {
-    font-size: 15px;
-  }
-
-  footer {
-    background: #eee;
-    margin: auto;
-    text-align: left;
-    padding: 1rem;
-  }
-</style>
 
 <body>
 
-  <nav>
+  <header>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
+
     <div class="dropdown" id="menu">
       <a href="../index.html">Home</a>
-      <a href="../pages/jared-page.html">Jared Balcom</a>
-      <a href="../pages/kellee-page.html">Kellee Balcom</a>
-      <a href="../pages/mckaila-page.html">McKaila Balcom</a>
-      <a href="../pages/will-page.html">Will Balcom</a>
-      <a href="../pages/pets-page.html">Pets</a>
+      <a href="jared-page.html">Jared Balcom</a>
+      <a href="kellee-page.html">Kellee Balcom</a>
+      <a href="mckaila-page.html">McKaila Balcom</a>
+      <a href="will-page.html">Will Balcom</a>
+      <a href="pets-page.html">Pets</a>
     </div>
 
-  </nav>
+  </header>
 
   <h1>Jared William Balcom</h1>
 
-  <img src="../assets/images/dad-mck-tractor.JPG" alt="Dad McK Tractor">
+  <img src="../assets/images/dad-mck-tractor.jpg" alt="Dad McK Tractor">
 
   <p class="paragraph">Jared William Balcom was born in Pasco, Washington on August 1st, 1973. He grew up in a farm
-    family, with Jared
-    being the 4th generation of a family-owned potato farm, Balcom & Moe Inc., located in Pasco, Washington. Jared
-    graduated from Pasco High School(1991) and then graduated from Washington State University in Pullman, Washington in
-    1996. </p>
+    family, with Jared being the 4th generation of a family-owned potato farm, Balcom & Moe Inc., located in Pasco,
+    Washington. Jared graduated from Pasco High School(1991) and then graduated from Washington State University in
+    Pullman, Washington in 1996. </p>
 
-  <img src="../assets/images/dad-fish.JPEG" alt="Jared Balcom">
+  <img src="../assets/images/dad-fish.jpeg" alt="Jared Balcom">
 
   <p class="paragraph">After graduating, Jared moved back to Pasco and started working at the family farm. He worked his
-    way up the chain
-    of command and took over the farm as President in 2007. He married his wife, Kellee Magnuson, in May of 2003. His
-    daughter McKaila was born in 2005 and his son Will was born in 2007.</p>
+    way up the chain of command and took over the farm as President in 2007. He married his wife, Kellee Magnuson, in
+    May of 2003. His daughter McKaila was born in 2005 and his son Will was born in 2007.</p>
 
-  <img src="../assets/images/dad-will-mck.JPEG" alt="McK Will Dad hunting">
+  <img src="../assets/images/dad-will-mck.jpeg" alt="McKaila Will Dad hunting">
 
   <p class="paragraph"> Throughout his career, he's had many achievements, including being named the Young Agribusiness
-    Man of the Year in
-    2012 and being elected as the President of the National Potato Council in 2022. Jared still runs Balcom & Moe, which
-    mainly grows potatoes but also has a grape and apple division, and is also a partner of B&B Potato, which
-    specializes in fresh potatoes. To read more about Jared and Balcom & Moe Inc.,
+    Man of the Year in 2012 and being elected as the President of the National Potato Council in 2022. Jared still runs
+    Balcom & Moe, which mainly grows potatoes but also has a grape and apple division, and is also a partner of B&B
+    Potato, which specializes in fresh potatoes. To read more about Jared and Balcom & Moe Inc.,
     click <a href="https://balcomandmoe.com/">here</a>.</p>
 
   <footer>
     <p class="title">Quick Links</p>
-
     <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
     <hr>
     <p class="live-links"><a href="https://rsascouting.com/recruits/will-balcom/">Will Balcom Scouting Report</a></p>
@@ -154,6 +63,7 @@
       document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
+
 </body>
 
 </html>

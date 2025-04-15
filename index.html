@@ -6,46 +6,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>McKaila's Website</title>
-  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
 
-
-  <nav>
+  <header>
     <button onclick="toggleMenu()">Menu<span id="arrow">&#9656;</span></button>
 
     <div class="dropdown" id="menu">
-      <a href="../cs202/index.html">Home</a>
-      <a href="../cs202/pages/jared-page.html">Jared Balcom</a>
-      <a href="../cs202/pages/kellee-page.html">Kellee Balcom</a>
-      <a href="../cs202/pages/mckaila-page.html">McKaila Balcom</a>
-      <a href="../cs202/pages/will-page.html">Will Balcom</a>
-      <a href="../cs202/pages/pets-page.html">Pets</a>
+      <a href="index.html">Home</a>
+      <a href="pages/jared-page.html">Jared Balcom</a>
+      <a href="pages/kellee-page.html">Kellee Balcom</a>
+      <a href="pages/mckaila-page.html">McKaila Balcom</a>
+      <a href="pages/will-page.html">Will Balcom</a>
+      <a href="pages/pets-page.html">Pets</a>
     </div>
 
-  </nav>
+  </header>
 
   <h1>The Balcom Family</h1>
 
   <main>
     <!-- src specifies photo path, alt says the text name of the photo -->
-    <img src="../cs202/assets/images/family-photo.JPG" alt="Family Photo">
+    <img src="assets/images/family-photo.jpg" alt="Family Photo">
 
     <h2>Here is the Balcom family. Jared and Kellee Balcom have two kids, McKaila and Will. Below are links to
       biographies of each family member. Click on any name to go to their personal page.</h2>
 
     <!-- href means hypertext reference, leads to photo -->
     <ul class="flexbox-links">
-      <li class="dad"><a href="../cs202/pages/jared-page.html">Jared Balcom</a></li>
-      <li class="mom"><a href="../cs202/pages/kellee-page.html"> Kellee Balcom</a></li>
-      <li class="mck"><a href="../cs202/pages/mckaila-page.html">McKaila Balcom</a></li>
-      <li class="will"><a href="../cs202/pages/will-page.html">Will Balcom</a></li>
-      <li class="pets"><a href="../cs202/pages/pets-page.html">Pets</a></li>
+      <li class="dad"><a href="pages/jared-page.html">Jared Balcom</a></li>
+      <li class="mom"><a href="pages/kellee-page.html"> Kellee Balcom</a></li>
+      <li class="mck"><a href="pages/mckaila-page.html">McKaila Balcom</a></li>
+      <li class="will"><a href="pages/will-page.html">Will Balcom</a></li>
+      <li class="pets"><a href="pages/pets-page.html">Pets</a></li>
     </ul>
 
-
   </main>
+
   <footer>
     <p class="title">Quick Links</p>
     <p class="live-links"><a href="https://balcomandmoe.com/">Balcom & Moe</a></p>
@@ -64,6 +63,7 @@
       document.getElementById("arrow").classList.toggle("rotate");
     }
   </script>
+
 </body>
 
 </html>
