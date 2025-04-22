@@ -100,7 +100,7 @@ ul {
 .flexbox-links {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .dad {
