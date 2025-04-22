@@ -10,18 +10,6 @@ body {
   background-color: #8a8a88;
 }
 
-h1 {
-  /* puts flex around the elements for easier movement */
-  display: flex;
-  text-align: center;
-  text-decoration: underline;
-  margin: auto;
-  justify-content: center;
-  /* padding controls the space between the words and the box outline */
-  padding: 20px;
-  font-size: 60px;
-}
-
 header {
   background: #888a89;
 }
@@ -31,7 +19,7 @@ header button {
   display: flex;
   background-color: #eee;
   color: #000;
-  padding: 10px;
+  padding: 8px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -64,6 +52,18 @@ header button {
 
 .rotate {
   transform: rotate(90deg);
+}
+
+h1 {
+  /* puts flex around the elements for easier movement */
+  display: flex;
+  text-align: center;
+  text-decoration: underline;
+  margin: auto;
+  justify-content: center;
+  /* padding controls the space between the words and the box outline */
+  padding: 20px;
+  font-size: 60px;
 }
 
 img {
