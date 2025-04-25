@@ -69,11 +69,11 @@ h1 {
 img {
   display: block;
   /* width fills page */
-  width: 100%;
+  width: 50%;
   align-items: center;
-  padding: 1rem 8rem;
   /* photo moves around text when screen changes size */
   position: relative;
+  margin: auto;
 }
 
 h2 {

@@ -45,11 +45,11 @@ header button {
 }
 
 img {
-  display: flex;
-  width: 100%;
+  display: block;
+  width: 40%;
   align-items: center;
   position: relative;
-  padding: 1rem 30rem;
+  margin: auto;
 }
 
 body {
